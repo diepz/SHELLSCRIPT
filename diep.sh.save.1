@@ -1,0 +1,27 @@
+#!/bin/bash
+rm -rf 20*
+
+if [[ $(date +%u) ]] ; then
+    mon=$(date -d"last monday" +'%Y-%m-%d')
+else
+    mon=`date '%Y-%m-%d'`    
+fi
+
+
+mkdir $(date -d"last monday" +'%Y-%m-%d')
+mkdir $(date -d"Tuesday" +'%Y-%m-%d')
+mkdir $(date -d"Wednesday" +'%Y-%m-%d')
+mkdir $(date -d"Thursday" +'%Y-%m-%d')
+mkdir $(date -d"Friday" +'%Y-%m-%d')
+mkdir $(date -d"Saturday" +'%Y-%m-%d')
+mkdir $(date -d"Sunday" +'%Y-%m-%d')
+
+cd $(date -d"last monday" +'%Y-%m-%d')
+ wget  https://upload.wikimedia.org/wikipedia/commons/f/fe/Son_Tung_M-TP_1_%282017%29.png
+cd ..
+cd $(date -d"Tuesday" +'%Y-%m-%d')
+wget https://upload.wikimedia.org/wikipedia/commons/f/fe/Son_Tung_M-TP_1_%282017%29.png
+cd ..
+cd <pre><font color="#4E9A06">$(</font>date <font color="#4E9A06">-d</font><font color="#FCE94F"><b>&quot;Wednesday&quot;</b></font> +<font color="#FCE94F"><b>&apos;%Y-%m-%d&apos;</b></font><font color="#4E9A06">)</font>
+</pre>
+
