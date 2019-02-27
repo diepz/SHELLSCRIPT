@@ -28,4 +28,4 @@ wget https://upload.wikimedia.org/wikipedia/commons/8/8f/Big_Bang_2016_%27MADE%2
 cd ..
 cd $(date -d"Sunday" +'%Y-%m-%d')
 wget https://vietnammoi.vn/stores/news_dataimages/anhngocnt/052017/16/13/0709_img_9941-0804.jpg
-
+cd ..
